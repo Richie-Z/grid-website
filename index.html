@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS GRID</title>
+	<style type="text/css">
+		.grid-container{
+			display: grid;
+			grid-template-columns: auto auto auto auto auto;
+			grid-template-rows: 50% 50% 50% 50% 50% 50% 50% 50% 50%;
+			grid-auto-flow: dense;
+			grid-gap: 5px;
+		}
+		.site-title{
+			grid-column: span 2;
+			background: orange;
+		}
+		.nav{
+			grid-column: span 1;
+			background: pink;
+		}
+		.post-title{
+			grid-column: span 4;
+			background: lightblue;
+		}
+		.sidebar{
+			grid-row: span 3;
+			background: brown;
+		}
+		.post-meta{
+			grid-row: span 9;
+			background: lightgreen;
+		}
+		.main-content{
+			grid-column: span 3;
+			grid-row: span 3;
+			background: #666;
+		}
+		.ads{
+			grid-row: span 3;
+			background: brown;
+		}
+		.main-content-img{
+			grid-column: span 3;
+			grid-row: span 4;
+			background: yellow;
+		}
+		.other-stuff{
+			grid-row: span 3;
+			background: brown;
+		}
+		.footer{
+			grid-column: span 5;
+			background: #999;
+		}
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="site-title">Side Title</div>
+		<div class="nav">Nav 1</div>
+		<div class="nav">Nav 2</div>
+		<div class="nav">Nav 3</div>
+		<div class="post-title">Post Title</div>
+		<div class="sidebar">Side Bar</div>
+		<div class="post-meta">Post Meta</div>
+		<div class="main-content">Main Content</div>
+		<div class="ads">Ads</div>
+		<div class="main-content-img">Main Content Image</div>
+		<div class="other-stuff">Other Stuff</div>
+		<div class="footer">Copyright by Richie</div>
+	</div>
+</body>
+</html>
